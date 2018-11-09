@@ -1,0 +1,12 @@
+<div class="container spaser">
+  <div class="card card-primary">
+    <ul>
+      <app-post-list-item-component *ngFor="let post of posts"
+                                    [title]="post.title"
+                                    [content]="post.content"
+                                    [created_at]="post.created_at"
+      >
+      </app-post-list-item-component>
+    </ul>
+  </div>
+</div>
